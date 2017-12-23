@@ -12,6 +12,11 @@
         <property name="APP_TITLE"	    value="goLogoLo"></property>
 	<property name="APP_LOGO"	    value="goLogoLo.png"></property>
 	<property name="APP_PATH_CSS"	    value="css/"></property>
+        <property name="APP_PATH_ICON_IMAGES" value="images/icons/"></property>
+        <property name="APP_PATH_SHIELD_IMAGES" value="images/shields"></property>
+        <property name="APP_PATH_SUPPORT_IMAGES" value="images/supports"></property>
+        <property name="APP_PATH_BACKGROUND_IMAGES" value="images/backgrounds"></property>
+        <property name="APP_PATH_ARROW_IMAGES" value="images/arrows"></property>
 	<property name="APP_CSS"	    value="gol_style.css"></property>
         <property name="PREF_WIDTH"         value="800"></property>
         <property name="PREF_HEIGHT"        value="600"></property>
