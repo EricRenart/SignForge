@@ -1,5 +1,6 @@
 package data;
 
+import data.panel_elements.PanelElement;
 import djf.AppTemplate;
 import djf.components.AppDataComponent;
 import file.SFFiles;
@@ -10,7 +11,19 @@ public class SFDataManager implements AppDataComponent {
     AppTemplate app;
     SFFiles fileManager;
 
-    public void SFDataManager(AppTemplate app) {
+    // THE CURRENTLY LOADED SIGN
+    Sign sign;
+
+    // NEW ELEMENT TO ADD
+    PanelElement newElement;
+
+    // CURRENTLY SELECTED ELEMENT
+    PanelElement selectedElement;
+
+    // STATE OF THE DATA MANAGER
+    DataState state;
+
+    public SFDataManager(AppTemplate app) {
         this.app = app;
         fileManager = (SFFiles) app.getFileComponent();
     }
