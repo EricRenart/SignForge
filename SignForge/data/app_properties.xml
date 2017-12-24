@@ -9,15 +9,15 @@
 <properties>
     <property_list>        
         <!-- DESKTOP JAVA FRAMEWORK CONTROLS SETTINGS -->
-        <property name="APP_TITLE"	    value="goLogoLo"></property>
-	<property name="APP_LOGO"	    value="goLogoLo.png"></property>
+        <property name="APP_TITLE"	    value="SignForge - The Highway Sign Maker"></property>
+	<property name="APP_LOGO"	    value="SignForgeLogo.png"></property>
 	<property name="APP_PATH_CSS"	    value="css/"></property>
         <property name="APP_PATH_ICON_IMAGES" value="images/icons/"></property>
         <property name="APP_PATH_SHIELD_IMAGES" value="images/shields"></property>
         <property name="APP_PATH_SUPPORT_IMAGES" value="images/supports"></property>
         <property name="APP_PATH_BACKGROUND_IMAGES" value="images/backgrounds"></property>
         <property name="APP_PATH_ARROW_IMAGES" value="images/arrows"></property>
-	<property name="APP_CSS"	    value="gol_style.css"></property>
+	<property name="APP_CSS"	    value="sf_style.css"></property>
         <property name="PREF_WIDTH"         value="800"></property>
         <property name="PREF_HEIGHT"        value="600"></property>
         <property name="START_MAXIMIZED"    value="true"></property>
@@ -28,15 +28,15 @@
         <property name="HAS_FILE_TOOLBAR"        value="true"></property>
         <property name="HAS_NEW"    value="true"></property>
         <property name="HAS_LOAD"   value="true"></property>
-        <property name="HAS_CLOSE"  value="false"></property>
+        <property name="HAS_CLOSE"  value="true"></property>
         <property name="HAS_SAVE"   value="true"></property>
-        <property name="HAS_SAVE_AS"    value="false"></property>
-        <property name="HAS_EXPORT"     value="false"></property>
-        <property name="HAS_EXIT"       value="false"></property>
-        <property name="HAS_CUT_TOOLBAR"         value="true"></property>
-        <property name="HAS_UNDO_TOOLBAR"        value="true"></property>
-        <property name="HAS_SETTINGS_TOOLBAR"    value="true"></property>
-        <property name="HAS_LANGUAGE"  value="true"></property>
+        <property name="HAS_SAVE_AS"    value="true"></property>
+        <property name="HAS_EXPORT"     value="true"></property>
+        <property name="HAS_EXIT"       value="true"></property>
+        <property name="HAS_CUT_TOOLBAR"         value="false"></property>
+        <property name="HAS_UNDO_TOOLBAR"        value="false"></property>
+        <property name="HAS_SETTINGS_TOOLBAR"    value="false"></property>
+        <property name="HAS_LANGUAGE"  value="false"></property>
         <property name="HAS_HELP"   value="false"></property>
         <property name="HAS_ABOUT" value="true"></property>
         

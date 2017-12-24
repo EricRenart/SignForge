@@ -1,0 +1,45 @@
+.color-picker {
+    -fx-padding: 2px;
+}
+
+.edit_toolbar_row {
+    -fx-padding: 0px;
+    -fx-spacing: 5;
+    -fx-background-color: #333333;
+    -fx-background-radius: 5.0;
+    -fx-padding: 5;
+    -fx-spacing: 5;
+    -fx-border-width: 4px;
+    -fx-border-color: #000000;
+}
+
+.edit_toolbar_text {
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+}
+
+.color_chooser_pane {
+    -fx-background-color:seashell;
+    -fx-padding: 0px;
+}
+
+.color_chooser_control {
+    -fx-font-weight:bold;
+    -fx-font-size:20;
+}
+
+.edit_toolbar_bg {
+    -fx-background-color: #888888;
+    -fx-background-radius: 5.0;
+    -fx-border-width: 4px;
+    -fx-border-color: #000000;
+}
+
+.bordered_pane {
+    -fx-background-color: #006b54;
+    -fx-background-radius: 5.0;
+    -fx-padding: 15;
+    -fx-spacing: 10;
+    -fx-border-width: 2px;
+    -fx-border-color: #ffffff;
+}
