@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="37064662-9ac8-4779-a5cc-388acc7991b8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/SignForge/.travis.yml" afterPath="$PROJECT_DIR$/SignForge/.travis.yml" />
+      <change beforePath="$PROJECT_DIR$/SignForge/.travis.yml" afterPath="$PROJECT_DIR$/.travis.yml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -66,7 +66,7 @@
         </entry>
       </file>
       <file leaf-file-name=".travis.yml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/SignForge/.travis.yml">
+        <entry file="file://$PROJECT_DIR$/.travis.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="15">
               <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
@@ -368,11 +368,11 @@
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Eric\Desktop\SignForge" />
       <recent name="C:\Users\Eric\Desktop\SignForge\SignForge\images" />
       <recent name="C:\Users\Eric\Desktop\SignForge\SignForge\images\icons" />
       <recent name="C:\Users\Eric\Desktop\SignForge\SignForge" />
       <recent name="C:\Users\Eric\Desktop\SignForge\SignForge\src\css" />
-      <recent name="C:\Users\Eric\Desktop\SignForge\SignForge\images\shields\toll_roads" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -614,7 +614,14 @@
       <option name="project" value="LOCAL" />
       <updated>1514475714694</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="update .travis.yml">
+      <created>1514476158168</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1514476158168</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -688,7 +695,8 @@
     <MESSAGE value="begin adding ui elements" />
     <MESSAGE value="ui up and running" />
     <MESSAGE value="add Travis build support and begin implementing panels" />
-    <option name="LAST_COMMIT_MESSAGE" value="add Travis build support and begin implementing panels" />
+    <MESSAGE value="update .travis.yml" />
+    <option name="LAST_COMMIT_MESSAGE" value="update .travis.yml" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1079,7 +1087,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SignForge/.travis.yml">
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
