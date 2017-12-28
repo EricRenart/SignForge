@@ -1,17 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="37064662-9ac8-4779-a5cc-388acc7991b8" name="Default" comment="add Travis build support and begin implementing panels">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/junit_junit_4_12.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/org_testfx_testfx_core_4_0_10_alpha.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/SignForge/.travis.yml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/SignForge/tests/SignForgeAppTest.java" />
+    <list default="true" id="37064662-9ac8-4779-a5cc-388acc7991b8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/SignForge/SignForge.iml" afterPath="$PROJECT_DIR$/SignForge/SignForge.iml" />
-      <change beforePath="$PROJECT_DIR$/SignForge/src/data/Sign.java" afterPath="$PROJECT_DIR$/SignForge/src/data/Sign.java" />
-      <change beforePath="$PROJECT_DIR$/SignForge/src/data/SignConstants.java" afterPath="$PROJECT_DIR$/SignForge/src/data/SignConstants.java" />
-      <change beforePath="$PROJECT_DIR$/SignForge/src/data/panel_elements/Panel.java" afterPath="$PROJECT_DIR$/SignForge/src/data/panel_elements/Panel.java" />
-      <change beforePath="$PROJECT_DIR$/SignForge/tests/AppTestSuite.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/SignForge/.travis.yml" afterPath="$PROJECT_DIR$/SignForge/.travis.yml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -61,7 +53,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SignForgeAppTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SignForgeAppTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SignForge/tests/SignForgeAppTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
@@ -69,6 +61,16 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".travis.yml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SignForge/.travis.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -183,8 +185,8 @@
         <option value="$PROJECT_DIR$/SignForge/tests/AppTestSuite.java" />
         <option value="$PROJECT_DIR$/SignForge/tests/PanelTest.java" />
         <option value="$PROJECT_DIR$/SignForge/tests/StartupTest.java" />
-        <option value="$PROJECT_DIR$/SignForge/.travis.yml" />
         <option value="$PROJECT_DIR$/SignForge/tests/SignForgeAppTest.java" />
+        <option value="$PROJECT_DIR$/SignForge/.travis.yml" />
       </list>
     </option>
   </component>
@@ -605,7 +607,14 @@
       <option name="project" value="LOCAL" />
       <updated>1514085592771</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add Travis build support and begin implementing panels">
+      <created>1514475714694</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1514475714694</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -646,8 +655,8 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23223753" sideWeight="0.50364584" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23223753" sideWeight="0.49635416" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23223753" sideWeight="0.49635416" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -700,7 +709,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/SignForge/src/data/ElementIDType.java" />
     <entry file="file://$PROJECT_DIR$/SignForge/src/data/sign_elements/SupportType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
@@ -1053,10 +1061,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SignForge/.travis.yml">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="17" lean-forward="true" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1068,6 +1076,14 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SignForge/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
