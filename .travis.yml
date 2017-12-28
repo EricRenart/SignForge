@@ -1,2 +1,2 @@
 language: java
-script: all
+script: ant all
