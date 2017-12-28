@@ -22,5 +22,7 @@
       </library>
     </orderEntry>
     <orderEntry type="module" module-name="PropertiesManager" />
+    <orderEntry type="library" name="org.testfx:testfx-core:4.0.10-alpha" level="project" />
+    <orderEntry type="library" name="junit:junit:4.12" level="project" />
   </component>
 </module>

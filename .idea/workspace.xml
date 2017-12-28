@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="37064662-9ac8-4779-a5cc-388acc7991b8" name="Default" comment="ui up and running">
-      <change beforePath="" afterPath="$PROJECT_DIR$/SignForge/SignForge Main UI - Page 1.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/SignForge/images/About.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/SignForge/images/Exit.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/SignForge/images/Export.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/SignForge/images/Load.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/SignForge/images/New.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/SignForge/images/Save.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/SignForge/images/SaveAs.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/SignForge/src/css/SFStyle.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/SignForge/src/css/sf_style.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/SignForge/src/gui/SFCanvas.java" />
+    <list default="true" id="37064662-9ac8-4779-a5cc-388acc7991b8" name="Default" comment="add Travis build support and begin implementing panels">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/junit_junit_4_12.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/org_testfx_testfx_core_4_0_10_alpha.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/SignForge/.travis.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/SignForge/tests/SignForgeAppTest.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/SignForge/data/app_properties.xml" afterPath="$PROJECT_DIR$/SignForge/data/app_properties.xml" />
-      <change beforePath="$PROJECT_DIR$/SignForge/src/gui/SFWorkspace.java" afterPath="$PROJECT_DIR$/SignForge/src/gui/SFWorkspace.java" />
+      <change beforePath="$PROJECT_DIR$/SignForge/SignForge.iml" afterPath="$PROJECT_DIR$/SignForge/SignForge.iml" />
+      <change beforePath="$PROJECT_DIR$/SignForge/src/data/Sign.java" afterPath="$PROJECT_DIR$/SignForge/src/data/Sign.java" />
+      <change beforePath="$PROJECT_DIR$/SignForge/src/data/SignConstants.java" afterPath="$PROJECT_DIR$/SignForge/src/data/SignConstants.java" />
+      <change beforePath="$PROJECT_DIR$/SignForge/src/data/panel_elements/Panel.java" afterPath="$PROJECT_DIR$/SignForge/src/data/panel_elements/Panel.java" />
+      <change beforePath="$PROJECT_DIR$/SignForge/tests/AppTestSuite.java" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,32 +26,11 @@
       <file leaf-file-name="SignConstants.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SignForge/src/data/SignConstants.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="32" lean-forward="false" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SFCanvas.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SignForge/src/gui/SFCanvas.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state relative-caret-position="225">
+              <caret line="15" column="66" lean-forward="false" selection-start-line="15" selection-start-column="66" selection-end-line="15" selection-end-column="66" />
               <folding>
-                <element signature="e#121#122#0" expanded="true" />
-                <element signature="e#144#145#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ImageConstants.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SignForge/src/data/panel_elements/ImageConstants.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -63,10 +38,11 @@
       <file leaf-file-name="SFWorkspace.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SignForge/src/gui/SFWorkspace.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="409">
-              <caret line="199" column="58" lean-forward="false" selection-start-line="199" selection-start-column="58" selection-end-line="199" selection-end-column="58" />
+            <state relative-caret-position="485">
+              <caret line="208" column="37" lean-forward="false" selection-start-line="208" selection-start-column="37" selection-end-line="208" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#initToolbarControls#0;class#SFWorkspace#0" expanded="false" />
                 <element signature="method#setGridPaneCoords#0;class#SFWorkspace#0" expanded="false" />
                 <element signature="e#11640#11641#0" expanded="true" />
                 <element signature="e#11724#11725#0" expanded="true" />
@@ -75,12 +51,57 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AppGUI.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/DesktopJavaFramework/src/djf/ui/AppGUI.java">
+      <file leaf-file-name="SignForgeApp.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SignForge/src/SignForgeApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="901">
-              <caret line="437" column="47" lean-forward="true" selection-start-line="437" selection-start-column="47" selection-end-line="437" selection-end-column="47" />
+            <state relative-caret-position="30">
+              <caret line="7" column="19" lean-forward="false" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SignForgeAppTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SignForge/tests/SignForgeAppTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Sign.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SignForge/src/data/Sign.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="34" lean-forward="false" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Panel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SignForge/src/data/panel_elements/Panel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+              <folding>
+                <element signature="e#1526#1527#0" expanded="true" />
+                <element signature="e#1568#1569#0" expanded="true" />
+                <element signature="e#1604#1605#0" expanded="true" />
+                <element signature="e#1646#1647#0" expanded="true" />
+                <element signature="e#1682#1683#0" expanded="true" />
+                <element signature="e#1724#1725#0" expanded="true" />
+                <element signature="e#1761#1762#0" expanded="true" />
+                <element signature="e#1804#1805#0" expanded="true" />
+                <element signature="e#1857#1858#0" expanded="true" />
+                <element signature="e#1884#1885#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -94,6 +115,7 @@
         <option value="Enum" />
         <option value="FxmlFile" />
         <option value="XSLT Stylesheet" />
+        <option value="JUnit4 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -133,7 +155,6 @@
         <option value="$PROJECT_DIR$/SignForge/src/data/Supports.java" />
         <option value="$PROJECT_DIR$/SignForge/src/data/sign_elements/PanelElement.java" />
         <option value="$PROJECT_DIR$/SignForge/src/data/sign_elements/Supports.java" />
-        <option value="$PROJECT_DIR$/SignForge/src/data/Sign.java" />
         <option value="$PROJECT_DIR$/SignForge/src/data/sign_elements/SignElement.java" />
         <option value="$PROJECT_DIR$/SignForge/src/data/SFDataManager.java" />
         <option value="$PROJECT_DIR$/SignForge/src/data/sign_elements/SignBackground.java" />
@@ -143,7 +164,6 @@
         <option value="$PROJECT_DIR$/SignForge/src/data/panel_elements/ImageElement.java" />
         <option value="$PROJECT_DIR$/SignForge/src/data/panel_elements/Arrow.java" />
         <option value="$PROJECT_DIR$/SignForge/src/data/panel_elements/PanelText.java" />
-        <option value="$PROJECT_DIR$/SignForge/src/data/panel_elements/Panel.java" />
         <option value="$PROJECT_DIR$/SignForge/src/data/panel_elements/ExitTab.java" />
         <option value="$PROJECT_DIR$/SignForge/src/data/panel_elements/ImageConstants.java" />
         <option value="$PROJECT_DIR$/SignForge/src/tests/TestSuite.java" />
@@ -151,14 +171,20 @@
         <option value="$PROJECT_DIR$/SignForge/build.fxml" />
         <option value="$PROJECT_DIR$/SignForge/signforge.properties" />
         <option value="$PROJECT_DIR$/SignForge/signforge.xml" />
-        <option value="$PROJECT_DIR$/SignForge/src/data/SignConstants.java" />
-        <option value="$PROJECT_DIR$/SignForge/tests/AppTestSuite.java" />
         <option value="$PROJECT_DIR$/SignForge/src/css/SFStyle.java" />
         <option value="$PROJECT_DIR$/SignForge/src/gui/SFCanvas.java" />
         <option value="$PROJECT_DIR$/SignForge/src/css/sf_style.css" />
         <option value="$PROJECT_DIR$/DesktopJavaFramework/src/djf/ui/AppGUI.java" />
         <option value="$PROJECT_DIR$/SignForge/src/gui/SFWorkspace.java" />
         <option value="$PROJECT_DIR$/SignForge/data/app_properties.xml" />
+        <option value="$PROJECT_DIR$/SignForge/src/data/Sign.java" />
+        <option value="$PROJECT_DIR$/SignForge/src/data/SignConstants.java" />
+        <option value="$PROJECT_DIR$/SignForge/src/data/panel_elements/Panel.java" />
+        <option value="$PROJECT_DIR$/SignForge/tests/AppTestSuite.java" />
+        <option value="$PROJECT_DIR$/SignForge/tests/PanelTest.java" />
+        <option value="$PROJECT_DIR$/SignForge/tests/StartupTest.java" />
+        <option value="$PROJECT_DIR$/SignForge/.travis.yml" />
+        <option value="$PROJECT_DIR$/SignForge/tests/SignForgeAppTest.java" />
       </list>
     </option>
   </component>
@@ -186,7 +212,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="Scope">
         <subPane subId="Project Files">
           <expand>
@@ -212,34 +238,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="SignForge" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DesktopJavaFramework" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SignForge" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DesktopJavaFramework" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SignForge" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DesktopJavaFramework" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="djf" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SignForge" type="b2602c69:ProjectViewProjectNode" />
               <item name="SignForge" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SignForge" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SignForge" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SignForge" type="b2602c69:ProjectViewProjectNode" />
@@ -267,44 +271,106 @@
               <item name="SignForge" type="b2602c69:ProjectViewProjectNode" />
               <item name="SignForge" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="gui" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SignForge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SignForge" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="panel_elements" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SignForge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SignForge" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SignForge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="SignForge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="JUnit5.0" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="SignForge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="JUnit5.0" type="70bed36:NamedLibraryElementNode" />
+              <item name="junit-jupiter-api-5.0.0.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SignForge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="JUnit5.0" type="70bed36:NamedLibraryElementNode" />
+              <item name="junit-jupiter-api-5.0.0.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SignForge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="JUnit5.0" type="70bed36:NamedLibraryElementNode" />
+              <item name="junit-platform-commons-1.0.0.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SignForge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="JUnit5.0" type="70bed36:NamedLibraryElementNode" />
+              <item name="junit-platform-commons-1.0.0.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="commons" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SignForge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="JUnit5.0" type="70bed36:NamedLibraryElementNode" />
+              <item name="opentest4j-1.0.0.jar" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/signforge.xml" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="SearchEverywhereHistoryKey" value="ant&#9;ACTION&#9;ActivateAntBuildToolWindow&#10;test&#9;ACTION&#9;GotoTest" />
     <property name="Downloaded.Files.Path.Enabled" value="true" />
-    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="true" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="GenerateAntBuildDialog.generateSingleFile" value="true" />
     <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
     <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
     <property name="GenerateAntBuildDialog.backupFiles" value="true" />
     <property name="GenerateAntBuildDialog.outputFileNameProperty" value="signforge" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="data" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Eric\Desktop\SignForge\SignForge\data" />
+      <recent name="C:\Users\Eric\Desktop\SignForge\SignForge\fonts" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Eric\Desktop\SignForge\SignForge\images" />
       <recent name="C:\Users\Eric\Desktop\SignForge\SignForge\images\icons" />
       <recent name="C:\Users\Eric\Desktop\SignForge\SignForge" />
       <recent name="C:\Users\Eric\Desktop\SignForge\SignForge\src\css" />
       <recent name="C:\Users\Eric\Desktop\SignForge\SignForge\images\shields\toll_roads" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Eric\Desktop\SignForge\SignForge\data" />
-      <recent name="C:\Users\Eric\Desktop\SignForge\SignForge\fonts" />
-    </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="data" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -319,7 +385,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.AppTestSuite.runTestSuite">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -354,6 +420,66 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
+    </configuration>
+    <configuration name="AppTestSuite.runTestSuite" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="SignForge" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AppTestSuite" />
+      <option name="METHOD_NAME" value="runTestSuite" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="PanelTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="SignForge" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PanelTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="PanelTest.panelCreationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="SignForge" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PanelTest" />
+      <option name="METHOD_NAME" value="panelCreationTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -415,9 +541,18 @@
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
+    <list size="4">
+      <item index="0" class="java.lang.String" itemvalue="Application.SignForgeApp" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.PanelTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.PanelTest.panelCreationTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.AppTestSuite.runTestSuite" />
+    </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Application.SignForgeApp" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.AppTestSuite.runTestSuite" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.PanelTest.panelCreationTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.PanelTest" />
+        <item index="3" class="java.lang.String" itemvalue="Application.SignForgeApp" />
       </list>
     </recent_temporary>
   </component>
@@ -463,26 +598,60 @@
       <option name="project" value="LOCAL" />
       <updated>1514069366500</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="ui up and running">
+      <created>1514085592771</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1514085592771</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="AppTestSuite_runTestSuite - 2017.12.28 at 09h 51m 58s.xml">
+      <configuration name="AppTestSuite.runTestSuite" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PanelTest - 2017.12.28 at 09h 32m 30s.xml">
+      <configuration name="PanelTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PanelTest - 2017.12.28 at 09h 32m 53s.xml">
+      <configuration name="PanelTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PanelTest - 2017.12.28 at 09h 34m 20s.xml">
+      <configuration name="PanelTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PanelTest - 2017.12.28 at 09h 34m 43s.xml">
+      <configuration name="PanelTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PanelTest - 2017.12.28 at 09h 38m 07s.xml">
+      <configuration name="PanelTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PanelTest_panelCreationTest - 2017.12.28 at 09h 48m 18s.xml">
+      <configuration name="PanelTest.panelCreationTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PanelTest_panelCreationTest - 2017.12.28 at 09h 51m 35s.xml">
+      <configuration name="PanelTest.panelCreationTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3085896" sideWeight="0.496875" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3085896" sideWeight="0.496875" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3085896" sideWeight="0.503125" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23223753" sideWeight="0.50364584" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.117709436" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23223753" sideWeight="0.49635416" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.123958334" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.123958334" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1453125" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -509,7 +678,8 @@
     <MESSAGE value="add some toll road shields, init junit testing and ant buildfile" />
     <MESSAGE value="begin adding ui elements" />
     <MESSAGE value="ui up and running" />
-    <option name="LAST_COMMIT_MESSAGE" value="ui up and running" />
+    <MESSAGE value="add Travis build support and begin implementing panels" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Travis build support and begin implementing panels" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -521,7 +691,7 @@
           <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="6" />
+      <option name="time" value="7" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -530,63 +700,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/DesktopJavaFramework/src/djf/language/AppLanguageSettings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="128" column="76" lean-forward="false" selection-start-line="128" selection-start-column="76" selection-end-line="128" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DesktopJavaFramework/src/djf/components/AppWorkspaceComponent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="67" column="29" lean-forward="false" selection-start-line="67" selection-start-column="29" selection-end-line="67" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SignForge/src/data/ElementID.java" />
-    <entry file="file://$PROJECT_DIR$/SignForge/src/data/ElementIDFactory.java" />
-    <entry file="file://$PROJECT_DIR$/SignForge/src/data/Sign.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SignForge/src/data/DataState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="23" lean-forward="true" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SignForge/src/data/sign_elements/SignBackground.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="70" lean-forward="false" selection-start-line="4" selection-start-column="70" selection-end-line="4" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SignForge/src/file/SFFiles.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="18" column="29" lean-forward="false" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SignForge/src/data/sign_elements/SignElement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SignForge/src/data/ElementIDType.java" />
     <entry file="file://$PROJECT_DIR$/SignForge/src/data/sign_elements/SupportType.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -658,14 +771,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SignForge/src/SignForgeApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="19" column="14" lean-forward="false" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SignForge/images/shields/toll_roads/del_turnpike.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -715,37 +820,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SignForge/src/data/panel_elements/Panel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#324#325#0" expanded="false" />
-            <element signature="e#351#352#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SignForge/src/data/panel_elements/VMS.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#212#213#0" expanded="false" />
-            <element signature="e#239#240#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SignForge/tests/AppTestSuite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -753,7 +831,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="23" column="8" lean-forward="true" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -762,19 +839,10 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SignForge/src/data/SFDataManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="27" column="55" lean-forward="true" selection-start-line="27" selection-start-column="55" selection-end-line="27" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SignForge/src/css/sf_style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -782,7 +850,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -798,7 +865,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
           <caret line="49" column="10" lean-forward="true" selection-start-line="49" selection-start-column="10" selection-end-line="49" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -806,7 +872,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-345">
           <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -814,10 +879,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="20" />
-          <folding>
-            <element signature="e#166#167#0" expanded="true" />
-            <element signature="e#193#194#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -825,53 +886,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="47" lean-forward="false" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SignForge/src/data/panel_elements/ImageConstants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SignForge/src/data/SignConstants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="32" lean-forward="false" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SignForge/src/gui/SFCanvas.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="e#121#122#0" expanded="true" />
-            <element signature="e#144#145#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SignForge/images/icons/plus.png">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SignForge/src/gui/SFWorkspace.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="199" column="58" lean-forward="false" selection-start-line="199" selection-start-column="58" selection-end-line="199" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#setGridPaneCoords#0;class#SFWorkspace#0" expanded="false" />
-            <element signature="e#11640#11641#0" expanded="true" />
-            <element signature="e#11724#11725#0" expanded="true" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SignForge/data/app_properties.xml">
@@ -884,9 +904,170 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DesktopJavaFramework/src/djf/ui/AppGUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="437" column="47" lean-forward="true" selection-start-line="437" selection-start-column="47" selection-end-line="437" selection-end-column="47" />
+        <state relative-caret-position="1540">
+          <caret line="437" column="47" lean-forward="false" selection-start-line="437" selection-start-column="47" selection-end-line="437" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SignForge/src/gui/SFCanvas.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="16" lean-forward="false" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+          <folding>
+            <element signature="e#121#122#0" expanded="false" />
+            <element signature="e#144#145#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SignForge/src/data/panel_elements/ImageConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SignForge/src/data/SFDataManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="27" column="55" lean-forward="true" selection-start-line="27" selection-start-column="55" selection-end-line="27" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SignForge/src/data/DataState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="23" lean-forward="true" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SignForge/src/data/SignConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="66" lean-forward="false" selection-start-line="15" selection-start-column="66" selection-end-line="15" selection-end-column="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.0.0/junit-jupiter-api-5.0.0.jar!/org/junit/jupiter/api/Test.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="11" column="18" lean-forward="false" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.0.0/junit-jupiter-api-5.0.0.jar!/org/junit/jupiter/api/TestFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="18" lean-forward="false" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.0.0/junit-platform-commons-1.0.0.jar!/org/junit/platform/commons/JUnitException.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="12" column="84" lean-forward="false" selection-start-line="12" selection-start-column="84" selection-end-line="12" selection-end-column="92" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SignForge/src/data/Sign.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="34" lean-forward="false" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SignForge/src/data/panel_elements/Panel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding>
+            <element signature="e#1526#1527#0" expanded="true" />
+            <element signature="e#1568#1569#0" expanded="true" />
+            <element signature="e#1604#1605#0" expanded="true" />
+            <element signature="e#1646#1647#0" expanded="true" />
+            <element signature="e#1682#1683#0" expanded="true" />
+            <element signature="e#1724#1725#0" expanded="true" />
+            <element signature="e#1761#1762#0" expanded="true" />
+            <element signature="e#1804#1805#0" expanded="true" />
+            <element signature="e#1857#1858#0" expanded="true" />
+            <element signature="e#1884#1885#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SignForge/tests/PanelTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="24" lean-forward="true" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SignForge/tests/AppTestSuite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SignForge/tests/StartupTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="8" lean-forward="false" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SignForge/src/SignForgeApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="7" column="19" lean-forward="false" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SignForge/src/gui/SFWorkspace.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="485">
+          <caret line="208" column="37" lean-forward="false" selection-start-line="208" selection-start-column="37" selection-end-line="208" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#initToolbarControls#0;class#SFWorkspace#0" expanded="false" />
+            <element signature="method#setGridPaneCoords#0;class#SFWorkspace#0" expanded="false" />
+            <element signature="e#11640#11641#0" expanded="true" />
+            <element signature="e#11724#11725#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SignForge/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="17" lean-forward="true" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SignForge/tests/SignForgeAppTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -947,7 +1128,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -967,7 +1147,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>DesktopJavaFramework</last-edited>
+          <last-edited>junit:junit:4.12</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

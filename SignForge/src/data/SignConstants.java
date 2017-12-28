@@ -1,6 +1,9 @@
 package data;
 
 import javafx.scene.paint.Color;
+
+import javax.swing.border.StrokeBorder;
+
 public class SignConstants {
 
     // COLORS
